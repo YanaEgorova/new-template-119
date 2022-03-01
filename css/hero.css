@@ -1,0 +1,279 @@
+.hero__wrapper { 
+    position: relative;
+}
+.hero__wrapper-box {
+    background-color: var(--fifth-brand-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);   
+}
+.hero {
+    padding: 20rem 0 15rem;
+    position: relative;
+}
+.hero .title {
+    margin-bottom: 2rem;
+}
+.hero .title span {
+    display: block;
+    font-family: var(--title-font);
+    font-size: 13rem;
+    line-height: 1;
+}
+.hero .title span.color {
+    display: inline;
+    color: var(--third-brand-color);
+}
+.hero__block {
+   text-align: center;
+   margin-bottom: 5rem;
+}
+
+/* HEXAGON START */
+.hexagon-box__wrapper {
+    display:flex;
+    --s: 6rem;  /* size  */
+    --m: .2rem;    /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m)  - .1rem);
+
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hexagon-box {
+    font-size: 0; /*disable white space between inline block element */
+  }
+  
+  .hexagon-box div {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547); 
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background: var(--third-brand-color);
+    margin-bottom: calc(var(--m) - var(--s)*0.2885); 
+  }
+  .hexagon-box div:nth-child(odd) {
+    background:var(--first-brand-color);
+  }
+  .hexagon-box::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--f) - .3rem),      
+                     #000  0 var(--f));
+  }
+  .hexagon-box div:nth-child(1) {
+    background-image: url('../img/image-1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: grayscale(100%);
+  }
+  .hexagon-box div:nth-child(3) {
+      background-image: url('../img/image-2.jpeg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      filter: grayscale(100%);
+  }
+  .hexagon-box div:nth-child(7) {
+    background-image: url('../img/image-3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: grayscale(100%);
+}
+  .hexagon-box div:nth-child(9) {
+    background-image: url('../img/image-4.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: grayscale(100%);
+  }
+  .hexagon-box div:nth-child(10) {
+    background-image: url('../img/image-5.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: grayscale(100%);
+  }
+  .hexagon-box div:nth-child(13) {
+    background-image: url('../img/image-6.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: grayscale(100%);
+  }
+  .hexagon-box div:nth-child(8) {
+    background:var(--second-brand-color);
+  }
+/* HEXAGON END */
+
+
+
+.policy__wrapper {
+    position: relative;
+}
+.policy__wrapper-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(62, 62, 62, .3);
+
+    -webkit-clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+}
+.policy__wrapper-box::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background-color: var(--first-brand-color);
+
+    -webkit-clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+}
+.policy {
+    position: relative;
+    padding: 18rem 0 10rem;
+    text-align: center;
+}
+.policy__item:not(:last-child) {
+    margin-bottom: 6rem;
+}
+.policy__list {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.policy__icon {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 2rem;
+}
+.policy .sub-title {
+    text-transform: uppercase;
+    color: var(--third-brand-color);
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+.policy__title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.policy__block .text {
+    margin-bottom: 2rem;
+}
+.policy__btn {
+    text-transform: uppercase;
+    color: var(--third-brand-color);
+    font-size: 2rem;
+    border-bottom: .1rem solid var(--third-brand-color);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.phrase__wrapper {
+    background-color: var(--third-brand-color);
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0); 
+}
+.phrase {
+    padding: 25rem 0;
+    text-align: center;
+}
+.phrase .title {
+    color: var(--sub-text-color);
+}
+
+
+.contacts__wrapper {
+    background-color: var(--fifth-brand-color);
+    -webkit-clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+}
+.contacts {
+    padding: 20rem 0 10rem;
+    text-align: center;
+}
+.contacts .sub-title {
+    margin-bottom: 5rem;
+    color: var(--third-brand-color);
+    text-transform: uppercase;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1440px) {
+    .hero__wrapper { 
+        background-position: center;
+    }
+    .hero {
+        padding-top: 10rem;
+    }
+    .hero .title span {
+       font-size: 22rem;
+    }
+
+    /* HEXAGON START */
+    .hexagon-box__wrapper {
+        --s: 16rem; 
+        --m: .5rem; 
+    
+        max-width: 85.5rem;
+    }
+    /* HEXAGON END */
+
+
+
+    .policy .sub-title {
+        font-size: 6rem;
+        margin-bottom: 10rem;
+    }
+    .policy__btn:hover {
+        color: var(--main-text-color);
+        border-color: var(--main-text-color);
+    }
+
+    .contacts__item-link .text {
+        position: relative;
+    }
+    .contacts__item-link .text::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+        width: 0;
+        height: .1rem;
+        background-color: var(--main-text-color);
+        transition: all 0.3s ease-in-out;
+
+    }
+    .contacts__item-link .text:hover::after {
+        width: 100%;
+    }
+}
